@@ -75,10 +75,13 @@
           });
           noForLoops(onlyOneFruit);
           noNewArrays(onlyOneFruit);
-
+          //length
           it('should return an array with only the specified fruit string', function() {
             var lemons = onlyOneFruit(testFruits, 'lemon');
+            // console.log(lemons)
             var strawberries = onlyOneFruit(testFruits, 'strawberry');
+            // console.log(strawberries)
+            // console.log(testFruits)
             expect(lemons.length).to.eql(1);
             expect(strawberries.length).to.eql(1);
             expect(lemons).to.eql(['lemon']);
